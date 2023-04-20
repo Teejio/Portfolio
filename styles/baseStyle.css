@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@600&family=Fredoka&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+:root {
+    --coral: rgb(107, 213, 229);
+    --pasty: rgb(208, 253, 251);
+    --buff: rgb(139, 234, 183);
+    --caca: rgb(101, 181, 148);
+    --wine: rgb(37, 93, 66);
+    --bean: rgb(0, 35, 12);
+}
+
+body {
+    background-color: var(--pasty);
+    text-align: center;
+    user-select: none;
+}
+
+h1,h3,h2 {
+    color: var(--bean);
+    font-family: Kanit, sans-serif;
+
+}
+ h2{
+    animation: intro .5s ease-in-out;
+ }
+ .clicky {
+    color:rgb(237, 255, 234);
+
+}
+.Stackchild {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+#Title {
+    font-size: 50px;
+    line-height: 0%;
+    animation: intro .4s ease-in-out;
+}
+
+.blob{
+    opacity: 0.8; transform: translate(-70px, -70px);
+    transition-duration: 1.5s;
+}
+
+.blob2{
+    opacity: 0.6; deg(20px);transform: translate(-20px, -40px);
+    transition-duration: 1.3s;
+}
+
+.blob3{
+    opacity: 0.8; transform: translate(-90px, 0px);
+    transition-duration: 1.6s;
+}
+.clickCtn:hover .blob {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-90px, -100px) rotate(-25deg) scaleX(1.5) scaleZ(0.5) scaleY(.9);
+    transition-duration: 1s;
+
+  }
+
+  .clickCtn:hover .blob2 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(0px, -60px) rotate(25deg) scaleX(1.2) scaleZ(1) scaleY(1.1);
+    transition-duration: 1s;
+
+  }
+
+  .clickCtn:hover .blob3 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-90px, 0px) rotate(65deg) scaleX(1.7) scaleZ(1) scaleY(1.1);
+    transition-duration: 1s;
+
+  }
+
+  .clickCtn:hover{
+cursor: pointer;
+
+  }
+
+  .clickCtn:active {
+    cursor: ;
+    
+      }
+#ittytext {
+    line-height: 0%;
+    animation: intro .3s ease-in-out;
+}
+.artTxt{
+    color:rgb(82, 82, 22);
+    transition-duration: 1.4s;
+
+}
+.clickCtn:hover .artTxt {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: scale(2);
+    transition-duration: 1s;
+
+  }
+
+  .clickCtn{
+    position: relative;
+    text-align: center;
+  }
+  #codeCtn{
+    left: 70%;
+    background-color: black;
+    width: 200px;
+    height: 120px;
+  
+
+}
+
+#codeCtn h2{
+color :rgb(30, 255, 0);
+
+transform: scale(1.5);
+  }
+@keyframes intro {
+  
+    0%   { opacity: 0; transform: translate(100px, 100px);}
+
+  70% { opacity: .5; transform: translate(-10px, -10px);}
+  85% { opacity: .7; transform: translate(-6px, -5px);}
+  100% { opacity: 1; transform: translate(0px, 0px);}
+}
+
