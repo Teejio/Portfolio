@@ -1,71 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/baseStyle.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEEJIO's Portfolio</title>
-    
+<html lang="en"><!-- <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/Basestyle.css">
+  <title>Tutorial :]</title>
+  <script>
+     function setTheme(id){
+          localStorage.setItem('theme', (localStorage.getItem('theme') + 1)%2);
+           console.log(  localStorage.getItem('theme'));
+     }
+  </script>
 </head>
-<br>
-<br>
-<br>
 <body>
-    <h3 id = 'ittytext'>Welcome To 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;</h3>
-<h1 id = "Title">My Portfolio</h1>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h2> Check Out My</h2>
-<div class = "ctn">
-<div class = "clickCtn" id = "artCtn" style = "transform: translate(0px, 100px);">
-    
-    <img src="art/blob(1).svg" alt="boobies" width="200" height="200" class = "Stackchild blob"> 
-    <img src="art/blob(2).svg" alt="boobies" width="200" height="200"  class = "Stackchild blob2"> 
-    <img src="art/blob.svg" alt="boobies" width="200" height="200"  class = "Stackchild blob3"> 
-      <h2 class = "Stackchild artTxt"> Art</h2>  
-</div>
-<div class = "clickCtn" id = "codeCtn" style = "transform: translate(50%, 100px); background-color: black;">
-    
-
-      <h2  data-value="> CODE" id = "codr" class = "Stackchild codeText">> CODE</h2>  
-</div>
-</div>
-
-<script>
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ>!?";
-
-let interval = null;
-
-document.getElementById("codeCtn").onmouseover = event => {  
-  let iteration = 2;
   
-  clearInterval(interval);
-  
-  interval = setInterval(() => {
-    var dingus = document.getElementById("codr")
-    dingus.innerText = dingus.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration) {
-          return dingus.dataset.value[index];
-        }
-      
-        return letters[Math.floor(Math.random() * 28)]
-      })
-      .join("");
-    
-    if(iteration >= dingus.dataset.value.length){ 
-      clearInterval(interval);
-    }
-    
-    iteration += 1 / 2;
-  }, 50);
-}
-</script>
-</body>
+  <script>
+    localStorage.setItem('theme', 0);
+    setTheme(1);
+  </script>
+  <nav>
+    <div class = "navbar">
+     <div class = "navButton" onclick="setTheme(0)">
+      Switch Theme 
+    </div>
+       <div class = "navButton">
+      Pages
+      <div class="drp">
+        Objective
+      </div>
+      <div class="drp">
+        Controls
+      </div>
+      <div class="drp">
+        Shop
+      </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </nav>
+
+  <h1>
+    This site is currently
+  </h1>
+  <p> Use the Pages Tab to Navigate through what is need to do</p>
+</body>-->
+<h1> This site is temporarily down</h1><p>:(</p>
 </html>

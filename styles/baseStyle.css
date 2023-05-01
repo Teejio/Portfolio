@@ -1,137 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@600&family=Fredoka&family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Prompt&family=Yatra+One&display=swap');
 :root {
-    --coral: rgb(107, 213, 229);
-    --pasty: rgb(208, 253, 251);
-    --buff: rgb(139, 234, 183);
-    --caca: rgb(101, 181, 148);
-    --wine: rgb(37, 93, 66);
-    --bean: rgb(0, 35, 12);
-}
+  --body: #571913;
+  --nav-grad-1: #eca9a9;
+  --nav-grad-2: #f98257;
+  --drop: #e6faf3;
+  --drop-hover: #bfb8ae;
+  --nav-button: #8879376c;
+  --nav-button-hover: #681010b2;
+  --page-text: #ffffffb2;
+  --nav-text: #531821;
 
-body {
-    background-color: var(--pasty);
-    text-align: center;
-    user-select: none;
-}
-
-h1,h3,h2 {
-    color: var(--bean);
-    font-family: Kanit, sans-serif;
-
-}
- h2{
-    animation: intro .5s ease-in-out;
- }
- .clicky {
-    color:rgb(237, 255, 234);
-
-}
-.Stackchild {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-  }
-#Title {
-    font-size: 50px;
-    line-height: 0%;
-    animation: intro .4s ease-in-out;
-}
-
-.blob{
-    opacity: 0.8; transform: translate(-70px, -70px);
-    transition-duration: 1.5s;
-}
-
-.blob2{
-    opacity: 0.6; deg(20px);transform: translate(-20px, -40px);
-    transition-duration: 1.3s;
-}
-
-.blob3{
-    opacity: 0.8; transform: translate(-90px, 0px);
-    transition-duration: 1.6s;
-}
-.clickCtn:hover .blob {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-90px, -100px) rotate(-25deg) scaleX(1.5) scaleZ(0.5) scaleY(.9);
-    transition-duration: 1s;
-
-  }
-
-  .clickCtn:hover .blob2 {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(0px, -60px) rotate(25deg) scaleX(1.2) scaleZ(1) scaleY(1.1);
-    transition-duration: 1s;
-
-  }
-
-  .clickCtn:hover .blob3 {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-90px, 0px) rotate(65deg) scaleX(1.7) scaleZ(1) scaleY(1.1);
-    transition-duration: 1s;
-
-  }
-
-  .clickCtn:hover{
-cursor: pointer;
-
-  }
-
-  .clickCtn:active {
-    cursor: ;
-    
-      }
-#ittytext {
-    line-height: 0%;
-    animation: intro .3s ease-in-out;
-}
-.artTxt{
-    color:rgb(82, 82, 22);
-    transition-duration: 1.4s;
-
-}
-.clickCtn:hover .artTxt {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: scale(2);
-    transition-duration: 1s;
-
-  }
-
-  .clickCtn{
-    position: relative;
-    text-align: center;
-  }
-  #codeCtn{
-    left: 70%;
-    background-color: black;
-    width: 200px;
-    height: 120px;
+  --dark-body: #571913;
+  --dark-nav-grad-1: #eca9a9;
+  --dark-nav-grad-2: #f98257;
+  --dark-drop: #e6faf3;
+  --dark-drop-hover: #bfb8ae;
+  --dark-nav-button: #8879376c;
+  --dark-nav-button-hover: #681010b2;
+  --dark-page-text: #ffffffb2;
+  --dark-nav-text: #531821;
   
+  --light-body: #f8afaf;
+  --light-nav-grad-1: #682121;
+  --light-nav-grad-2: #51200e;
+  --light-drop: #912e1f;
+  --light-drop-hover: #441817;
+  --light-nav-button: #ef6c6c6c;
+  --light-nav-button-hover: #681010b2;
+  --light-page-text: #972020;
+  --light-nav-text: #eacbd0;
+}
+
+body
+{
+
+background-color: var(--body);
+font-family:  'Yatra One', serif;
+color:var(--page-text) ;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  color:var(--nav-text) ;
+  background-image: linear-gradient(to bottom right,var(--nav-grad-1),var(--nav-grad-2));
+  position:absolute;
+  top:0px;
+  left:0px;
+  border-radius: 0px 0px 1rem 0rem;
+display: inline-block;
+font-size: 13px;
 
 }
 
-#codeCtn h2{
-color :rgb(30, 255, 0);
+.navButton {
+  display: inline-block;
+  background-color: var(--nav-button);
+  margin: 0px 10px 10px 0px;
+  padding: 10px;
+height: 30px;
+border-radius: 0%;
+transition-duration: .5s;
+vertical-align: middle;
+width: 200px;
+font-size: 13px;
+font-weight: 500;
+}
 
-transform: scale(1.5);
-  }
-@keyframes intro {
+.navButton:hover {
+  border-radius: 10px 10px 0px 0px;
+  background-color: var(--nav-button-hover);
+}
+
+.drp {
+  font-size: 16px;
+  font-weight: 900;
+  height: 30px;
+  background-color: var(--drop);
+  padding: 0px 10px 5px 10px;
+  width: 200px;
+  transform: translate(-10px,20px);
+}
+.drp:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+.navButton:hover .drp:hover {
+  background-color: var(--drop-hover);
+}
+
+
+.navButton:hover .drp {
+  visibility: visible;
+
+}
+
+@keyframes drp { 
   
-    0%   { opacity: 0; transform: translate(100px, 100px);}
-
-  70% { opacity: .5; transform: translate(-10px, -10px);}
-  85% { opacity: .7; transform: translate(-6px, -5px);}
-  100% { opacity: 1; transform: translate(0px, 0px);}
+  0%   { opacity: 0; transform: translate(-10px,-27px);}
+  100% { opacity: 1;transform: translate(-10px,20px);}
+}
+@keyframes drp2 { 
+  
+  0%   { opacity: 0; transform: translate(-10px,-45px);}
+  100% { opacity: 1;transform: translate(-10px,20px);}
+}
+@keyframes drp3 { 
+  
+  0%   { opacity: 0; transform: translate(-10px,-65px);}
+  100% { opacity: 1;transform: translate(-10px,20px);}
 }
 
+@keyframes drp4 { 
+  0%   { opacity: 0; transform: translate(-10px,-85px);}
+  100% { opacity: 1;transform: translate(-10px,20px);}
+}
+
+@keyframes away { 
+  
+  0%   { opacity: 1;transform: translate(-10px,20px);}
+  100% { opacity: 0; transform: translate(-10px,-80px);
+    visibility: hidden;}
+}
+
+.navButton:hover .drp:nth-child(1){
+  animation: drp1 .5s ease-out;
+}
+.navButton:hover .drp:nth-child(2){
+  animation: drp2 .5s ease-out;
+}
+.navButton:hover .drp:nth-child(3){
+  animation: drp3 .6s ease-out;
+}
+.navButton:hover .drp:nth-child(4){
+  animation: drp4 .7s ease-out;
+}
+
+.navButton .drp:nth-child(1){
+  animation: away .5s ease-out;
+  animation-fill-mode: forwards;
+}
+.navButton .drp:nth-child(2){
+  animation: away .4s ease-out;
+  animation-fill-mode: forwards;
+
+}
+.navButton .drp:nth-child(3){
+  animation: away .3s ease-out;
+  animation-fill-mode: forwards;
+}
+.navButton .drp:nth-child(4){
+  animation: away .2s ease-out;
+  animation-fill-mode: forwards;
+}
